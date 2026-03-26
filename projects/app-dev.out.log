@@ -1,0 +1,272 @@
+▲ Next.js 16.1.6 (Rspack)
+- Local:         http://localhost:3000
+- Network:       http://198.18.0.1:3000
+- Environments: .env
+- Experiments (use with caution):
+  · cssChunking: "strict"
+  ✓ memoryBasedWorkersCount
+  · optimizePackageImports
+
+✓ Starting...
+persistent cache save failed. move temp files failed
+move `E:\FastGPT-4.2.3\projects\app\.next\dev\cache\webpack\.temp\ee5a5e3991078c98\build_dependencies\scope_meta` failed due to `系统找不到指定的文件。 (os error 2)`
+○ Compiling /instrumentation ...
+HTTP_PROXY: undefined
+HTTPS_PROXY: undefined
+NO_PROXY: undefined
+ALL_PROXY: undefined
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mStarting system initialization...[0m
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0minfra:mongo[0m          [0mStarting MongoDB connection[0m
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0minfra:mongo[0m          [0mStarting MongoDB connection[0m
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ workers initialization started[0m
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0minfra:s3[0m             [0mStarting S3 delete worker[0m
+[0m2026-03-26 16:10:10[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:collection[0m   [0mCollection Update worker initialized[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'appDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;96;165;250mDBG[0m [0minfra:s3[0m             [0mPrivate bucket exists: [0m{[0m
+                                                 bucketName: [32m'fastgpt-private'[39m,[0m
+                                                 data: { exists: [33mtrue[39m, created: [33mfalse[39m, bucket: [32m'fastgpt-private'[39m }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:mongo[0m          [0mMongoDB connected successfully[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;96;165;250mDBG[0m [0minfra:mongo[0m          [0mMongo change stream watch cleanup[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:mongo[0m          [0mMongo change stream watch started[0m
+[0m2026-03-26 16:10:11[0m   [0m[38;2;52;211;153mINF[0m [0minfra:mongo[0m          [0mMongoDB connected successfully[0m
+[0m2026-03-26 16:10:12[0m   [0m[38;2;52;211;153mINF[0m [0minfra:postgres[0m       [0mPostgres pool connected[0m
+[0m2026-03-26 16:10:12[0m   [0m[38;2;52;211;153mINF[0m [0moutlink:wechat[0m       [0mResuming wechat polling: [0m{ count: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:12[0m   [0m[38;2;52;211;153mINF[0m [0moutlink:wechat[0m       [0mWechat poll worker initialized[0m
+[0m2026-03-26 16:10:12[0m   [0m[38;2;52;211;153mINF[0m [0minfra:postgres[0m       [0mPostgres pool connected[0m
+[0m2026-03-26 16:10:14[0m   [0m[38;2;52;211;153mINF[0m [0minfra:postgres[0m       [0mPostgres vector initialization completed[0m
+[0m2026-03-26 16:10:14[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mSystem version resolved: [0m{ systemVersion: [32m'0.0.0'[39m }[0m[0m
+[0m2026-03-26 16:10:14[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mSystem config loaded: [0m{[0m
+                                                 fastgpt: {[0m
+                                                   feConfigs: {[0m
+                                                     lafEnv: [32m'https://laf.dev'[39m,[0m
+                                                     show_emptyChat: [33mtrue[39m,[0m
+                                                     show_git: [33mtrue[39m,[0m
+                                                     docUrl: [32m'https://doc.fastgpt.io'[39m,[0m
+                                                     openAPIDocUrl: [32m'https://doc.fastgpt.io/docs/openapi/intro'[39m,[0m
+                                                     submitPluginRequestUrl: [32m'https://github.com/labring/fastgpt-plugin/issues'[39m,[0m
+                                                     appTemplateCourse: [32m'https://fael3z0zfze.feishu.cn/wiki/CX9wwMGyEi5TL6koiLYcg7U0nWb?fromScene=spaceOverview'[39m,[0m
+                                                     systemTitle: [32m'FastGPT'[39m,[0m
+                                                     concatMd: [32m'项目开源地址: [FastGPT GitHub](https://github.com/labring/FastGPT)\n'[39m +[0m
+                                                       [32m'交流群: ![](https://oss.laf.run/otnvvf-imgs/fastgpt-feishu1.png)'[39m,[0m
+                                                     limit: { exportDatasetLimitMinutes: [33m0[39m, websiteSyncLimitMinuted: [33m0[39m },[0m
+                                                     scripts: [],[0m
+                                                     favicon: [32m'/favicon.ico'[39m,[0m
+                                                     chineseRedirectUrl: [32m''[39m,[0m
+                                                     uploadFileMaxSize: [33m1000[39m,[0m
+                                                     uploadFileMaxAmount: [33m1000[39m,[0m
+                                                     isPlus: [33mfalse[39m,[0m
+                                                     hideChatCopyrightSetting: [33mfalse[39m,[0m
+                                                     show_aiproxy: [33mtrue[39m,[0m
+                                                     show_coupon: [33mfalse[39m,[0m
+                                                     show_discount_coupon: [33mfalse[39m,[0m
+                                                     show_dataset_enhance: [90mundefined[39m,[0m
+                                                     show_batch_eval: [90mundefined[39m,[0m
+                                                     show_agent_sandbox: [33mfalse[39m,[0m
+                                                     payFormUrl: [32m''[39m,[0m
+                                                     agentSandboxFree: [33mfalse[39m,[0m
+                                                     showCustomPdfParse: [33mfalse[39m,[0m
+                                                     customPdfParsePrice: [33m0[39m[0m
+                                                   },[0m
+                                                   systemEnv: { vectorMaxProcess: [33m15[39m, qaMaxProcess: [33m15[39m, pgHNSWEfSearch: [33m100[39m },[0m
+                                                   subPlans: [90mundefined[39m,[0m
+                                                   licenseData: [90mundefined[39m[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:14[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0minstrumentation check start[0m
+[0m2026-03-26 16:10:15[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0minstrumentation check finish[0m
+[0m2026-03-26 16:10:15[0m   [0m[38;2;52;211;153mINF[0m [0minfra:redis[0m          [0mGlobal Redis connected[0m
+[0m2026-03-26 16:10:15[0m   [0m[38;2;96;165;250mDBG[0m [0mai:config[0m            [0mSystem models loaded: [0m{ total: [33m222[39m, active: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:15[0m   [0m[38;2;52;211;153mINF[0m [0muser:team[0m            [0mDefault team created: [0m{[0m
+                                                 userId: new ObjectId([32m'69c4e9e7ffd2d85784319f54'[39m),[0m
+                                                 teamId: new ObjectId([32m'69c4e9e7ffd2d85784319f58'[39m),[0m
+                                                 tmbId: new ObjectId([32m'69c4e9e7ffd2d85784319f5a'[39m)[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:15[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mRoot user initialized: [0m{ username: [32m'root'[39m, fromEnvPassword: [33mtrue[39m }[0m[0m
+[0m2026-03-26 16:10:16[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m5[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:18[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m10[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:19[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m15[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:20[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m20[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:21[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m25[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0msystem[0m               [0mWorker preload batch completed: [0m{ queuedWorkers: [33m30[39m, batchSize: [33m5[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mWorker preload completed: [0m{ queuedWorkers: [33m30[39m, durationMs: [33m7300[39m, max: [33m30[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mSchedule trigger scan started: [0m{ startAt: [35m2026-03-26T08:10:22.509Z[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m1[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m1[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m1[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m2[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m2[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m2[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m3[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m3[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m3[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m4[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m4[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m4[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m5[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m5[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m5[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m6[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m6[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m6[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m7[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m7[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m7[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m8[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m8[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m8[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m9[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m9[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m9[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m10[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m10[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m10[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m11[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m11[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m10[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m12[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m12[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m10[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m13[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m13[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m10[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m14[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m14[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m10[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:22[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mSystem initialized successfully[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m14[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m13[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m9[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m12[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m8[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m14[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m7[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m13[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m12[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m11[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m6[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m11[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m9[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m10[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m8[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m9[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m8[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m5[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m4[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m7[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m7[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m6[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m6[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m3[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m2[39m }[0m[0m
+✓ Ready in 96.7s
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m1[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m5[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m5[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m4[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m4[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m3[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m3[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m2[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m2[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m1[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m1[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;52;211;153mINF[0m [0msystem[0m               [0mSchedule trigger scan completed: [0m{ dueCount: [33m0[39m, startAt: [35m2026-03-26T08:10:22.509Z[39m }[0m[0m
+[0m2026-03-26 16:10:25[0m   [0m[38;2;52;211;153mINF[0m [0minfra:s3[0m             [0mNo expired S3 files to clean[0m
+○ Compiling /404 ...
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'appDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:10:34[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'appDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'appDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:11:30[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'appDelete'[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:12:36[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'wechatPoll'[39m }[0m[0m
+[0m2026-03-26 16:12:36[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'teamDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:36[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'datasetDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:36[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m's3FileDelete'[39m }[0m[0m
+[0m2026-03-26 16:12:36[0m   [0m[38;2;52;211;153mINF[0m [0minfra:queue[0m          [0mBullMQ worker ready: [0m{ name: [32m'collectionUpdate'[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:13:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:14:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue size check: [0m{ queueSize: [33m0[39m, max: [33m15[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue size check: [0m{ queueSize: [33m0[39m, max: [33m10[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mParse queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mParse queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mQA queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mQA queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;52;211;153mINF[0m [0mdataset:queues[0m       [0mVector queue drained: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mdataset:queues[0m       [0mVector queue loop exit: [0m{ queueSize: [33m0[39m }[0m[0m
+[0m2026-03-26 16:15:00[0m   [0m[38;2;96;165;250mDBG[0m [0mai:config[0m            [0mSystem models loaded: [0m{ total: [33m222[39m, active: [33m0[39m }[0m[0m
+[?25h

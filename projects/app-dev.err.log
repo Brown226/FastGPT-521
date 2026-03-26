@@ -1,0 +1,801 @@
+⚠ `next-rspack` is currently experimental. It's not an official Next.js plugin, and is supported by the Rspack team in partnership with Next.js. Help improve Next.js and Rspack by providing feedback at https://github.com/vercel/next.js/discussions/77800
+Warning: Reverting webpack devtool to 'false'.
+Changing the webpack devtool in development mode will cause severe performance regressions.
+Read more: https://nextjs.org/docs/messages/improper-devtool
+[0m2026-03-26 16:10:12[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m1433[39m,[0m
+                                                 collectionName: [32m'outlinks'[39m,[0m
+                                                 op: [32m'find'[39m,[0m
+                                                 query: {[0m
+                                                   type: [32m'wechat'[39m,[0m
+                                                   [32m'app.status'[39m: [32m'online'[39m,[0m
+                                                   [32m'app.token'[39m: { [32m'$exists'[39m: [33mtrue[39m, [32m'$ne'[39m: [32m''[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:14[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:postgres[0m       [0mPostgres slow query detected: [0m{[0m
+                                                 level: [32m'slow-2'[39m,[0m
+                                                 durationMs: [33m2070[39m,[0m
+                                                 sql: [32m'\n'[39m +[0m
+                                                   [32m'        CREATE EXTENSION IF NOT EXISTS vector;\n'[39m +[0m
+                                                   [32m'        CREATE TABLE IF NOT EXISTS modeldata (\n'[39m +[0m
+                                                   [32m'            id BIGSERIAL PRIMARY KEY,\n'[39m +[0m
+                                                   [32m'            vector VECTOR(1536) NOT NULL,\n'[39m +[0m
+                                                   [32m'            team_id VARCHAR(50) NOT NULL,\n'[39m +[0m
+                                                   [32m'            dataset_id VARCHAR(50) NOT NULL,\n'[39m +[0m
+                                                   [32m'            collection_id VARCHAR(50) NOT NULL,\n'[39m +[0m
+                                                   [32m'            createtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n'[39m +[0m
+                                                   [32m'        );\n'[39m +[0m
+                                                   [32m'      '[39m[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m678[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.527Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.527Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m683[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.529Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.529Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m686[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.527Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.527Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m690[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.531Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.531Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m694[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.528Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.528Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m697[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.526Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.526Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m704[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.529Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.529Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m711[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.530Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.530Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m716[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.530Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.530Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m719[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.529Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.529Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m723[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.531Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.531Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m726[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.530Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.530Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m730[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.528Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.528Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m735[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m739[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.530Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.530Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m747[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.522Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.522Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m749[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.520Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.520Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m752[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.531Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.531Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m754[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.531Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.531Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m758[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.531Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.531Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m761[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.528Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.528Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m763[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.526Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.526Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m765[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.524Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.524Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m768[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.523Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.523Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m769[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.523Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.523Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m772[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.525Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.525Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m836[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m837[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m839[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m842[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'parse'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m844[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m846[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.532Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.532Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m847[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m848[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m849[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m850[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m851[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m851[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.533Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.533Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m853[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'qa'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:00:22.534Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.534Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m854[39m,[0m
+                                                 collectionName: [32m'dataset_trainings'[39m,[0m
+                                                 op: [32m'findOneAndUpdate'[39m,[0m
+                                                 query: {[0m
+                                                   mode: [32m'chunk'[39m,[0m
+                                                   retryCount: { [32m'$gt'[39m: [33m0[39m },[0m
+                                                   lockTime: { [32m'$lte'[39m: [35m2026-03-26T08:07:22.534Z[39m }[0m
+                                                 },[0m
+                                                 update: {[0m
+                                                   [32m'$inc'[39m: { retryCount: [33m-1[39m },[0m
+                                                   [32m'$set'[39m: { lockTime: [35m2026-03-26T08:10:22.534Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:23[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:mongo[0m          [0mMongoDB slow query (>500ms): [0m{[0m
+                                                 duration: [33m855[39m,[0m
+                                                 collectionName: [32m'apps'[39m,[0m
+                                                 op: [32m'find'[39m,[0m
+                                                 query: {[0m
+                                                   scheduledTriggerConfig: { [32m'$exists'[39m: [33mtrue[39m },[0m
+                                                   scheduledTriggerNextTime: { [32m'$lte'[39m: [35m2026-03-26T08:10:22.517Z[39m }[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:33[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:10:41[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:29[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:11:37[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:06[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:35[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:35[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:35[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:35[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+[0m2026-03-26 16:12:35[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:redis[0m          [0mRedis reconnecting: [0m{ attempt: [33m1[39m, delayMs: [33m50[39m }[0m[0m
+react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+Warning: data for page "/" is 198 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+error: terminating connection due to administrator command
+    at ignore-listed frames {
+  length: 116,
+  severity: 'FATAL',
+  code: '57P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '3211',
+  routine: 'ProcessInterrupts'
+}
+⨯ uncaughtException: error: terminating connection due to administrator command
+    at ignore-listed frames {
+  length: 116,
+  severity: 'FATAL',
+  code: '57P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '3211',
+  routine: 'ProcessInterrupts'
+}
+⨯ uncaughtException:  error: terminating connection due to administrator command
+    at ignore-listed frames {
+  length: 116,
+  severity: 'FATAL',
+  code: '57P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '3211',
+  routine: 'ProcessInterrupts'
+}
+Error: Connection terminated unexpectedly
+    at ignore-listed frames
+⨯ uncaughtException: Error: Connection terminated unexpectedly
+    at ignore-listed frames
+⨯ uncaughtException:  Error: Connection terminated unexpectedly
+    at ignore-listed frames
+[0m2026-03-26 16:12:48[0m   [0m[38;2;248;113;113mERR[0m [0merror[0m                [0mUncaught exception: [0m{[0m
+                                                 error: error: terminating connection due to administrator command[0m
+                                                     at ignore-listed frames {[0m
+                                                   length: [33m116[39m,[0m
+                                                   severity: [32m'FATAL'[39m,[0m
+                                                   code: [32m'57P01'[39m,[0m
+                                                   detail: [90mundefined[39m,[0m
+                                                   hint: [90mundefined[39m,[0m
+                                                   position: [90mundefined[39m,[0m
+                                                   internalPosition: [90mundefined[39m,[0m
+                                                   internalQuery: [90mundefined[39m,[0m
+                                                   where: [90mundefined[39m,[0m
+                                                   schema: [90mundefined[39m,[0m
+                                                   table: [90mundefined[39m,[0m
+                                                   column: [90mundefined[39m,[0m
+                                                   dataType: [90mundefined[39m,[0m
+                                                   constraint: [90mundefined[39m,[0m
+                                                   file: [32m'postgres.c'[39m,[0m
+                                                   line: [32m'3211'[39m,[0m
+                                                   routine: [32m'ProcessInterrupts'[39m[0m
+                                                 }[0m
+                                               }[0m[0m
+[0m2026-03-26 16:12:48[0m   [0m[38;2;248;113;113mERR[0m [0merror[0m                [0mUncaught exception: [0m{[0m
+                                                 error: Error: Connection terminated unexpectedly[0m
+                                                     at ignore-listed frames[0m
+                                               }[0m[0m
+[0m2026-03-26 16:12:48[0m   [0m[38;2;251;191;36mWRN[0m [0minfra:postgres[0m       [0mPostgres connection removed from pool[0m
+[0m2026-03-26 16:12:48[0m   [0m[38;2;248;113;113mERR[0m [0minfra:postgres[0m       [0mPostgres pool error: [0m{[0m
+                                                 error: error: terminating connection due to administrator command[0m
+                                                     at ignore-listed frames {[0m
+                                                   length: [33m116[39m,[0m
+                                                   severity: [32m'FATAL'[39m,[0m
+                                                   code: [32m'57P01'[39m,[0m
+                                                   detail: [90mundefined[39m,[0m
+                                                   hint: [90mundefined[39m,[0m
+                                                   position: [90mundefined[39m,[0m
+                                                   internalPosition: [90mundefined[39m,[0m
+                                                   internalQuery: [90mundefined[39m,[0m
+                                                   where: [90mundefined[39m,[0m
+                                                   schema: [90mundefined[39m,[0m
+                                                   table: [90mundefined[39m,[0m
+                                                   column: [90mundefined[39m,[0m
+                                                   dataType: [90mundefined[39m,[0m
+                                                   constraint: [90mundefined[39m,[0m
+                                                   file: [32m'postgres.c'[39m,[0m
+                                                   line: [32m'3211'[39m,[0m
+                                                   routine: [32m'ProcessInterrupts'[39m,[0m
+                                                   client: Client {[0m
+                                                     _events: [36m[Object: null prototype][39m,[0m
+                                                     _eventsCount: [33m1[39m,[0m
+                                                     _maxListeners: [90mundefined[39m,[0m
+                                                     connectionParameters: [36m[ConnectionParameters][39m,[0m
+                                                     user: [32m'username'[39m,[0m
+                                                     database: [32m'postgres'[39m,[0m
+                                                     port: [33m5433[39m,[0m
+                                                     host: [32m'localhost'[39m,[0m
+                                                     replication: [90mundefined[39m,[0m
+                                                     _Promise: [36m[Function: Promise][39m,[0m
+                                                     _types: [36m[TypeOverrides][39m,[0m
+                                                     _ending: [33mtrue[39m,[0m
+                                                     _ended: [33mtrue[39m,[0m
+                                                     _connecting: [33mfalse[39m,[0m
+                                                     _connected: [33mtrue[39m,[0m
+                                                     _connectionError: [33mfalse[39m,[0m
+                                                     _queryable: [33mfalse[39m,[0m
+                                                     enableChannelBinding: [33mfalse[39m,[0m
+                                                     connection: [36m[Connection][39m,[0m
+                                                     queryQueue: [],[0m
+                                                     binary: [33mfalse[39m,[0m
+                                                     processID: [33m215[39m,[0m
+                                                     secretKey: [33m1265987064[39m,[0m
+                                                     ssl: [33mfalse[39m,[0m
+                                                     _connectionTimeoutMillis: [33m30000[39m,[0m
+                                                     _connectionCallback: [1mnull[22m,[0m
+                                                     connectionTimeoutHandle: Timeout {[0m
+                                                       _idleTimeout: [33m-1[39m,[0m
+                                                       _idlePrev: [1mnull[22m,[0m
+                                                       _idleNext: [1mnull[22m,[0m
+                                                       _idleStart: [33m86458[39m,[0m
+                                                       _onTimeout: [1mnull[22m,[0m
+                                                       _timerArgs: [90mundefined[39m,[0m
+                                                       _repeat: [1mnull[22m,[0m
+                                                       _destroyed: [33mtrue[39m,[0m
+                                                       [[32mSymbol(refed)[39m]: [33mfalse[39m,[0m
+                                                       [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,[0m
+                                                       [[32mSymbol(asyncId)[39m]: [33m17083[39m,[0m
+                                                       [[32mSymbol(triggerId)[39m]: [33m17078[39m,[0m
+                                                       [[32mSymbol(kResourceStore)[39m]: [90mundefined[39m[0m
+                                                     },[0m
+                                                     saslSession: [1mnull[22m,[0m
+                                                     release: [36m[Function (anonymous)][39m,[0m
+                                                     activeQuery: [1mnull[22m,[0m
+                                                     readyForQuery: [33mtrue[39m,[0m
+                                                     hasExecuted: [33mtrue[39m,[0m
+                                                     _poolUseCount: [33m4[39m,[0m
+                                                     [[32mSymbol(shapeMode)[39m]: [33mfalse[39m,[0m
+                                                     [[32mSymbol(kCapture)[39m]: [33mfalse[39m[0m
+                                                   }[0m
+                                                 }[0m
+                                               }[0m[0m
