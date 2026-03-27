@@ -17,10 +17,14 @@ const LoginModal = ({ onSuccess }: LoginModalProps) => {
     <Flex
       alignItems={'center'}
       justifyContent={'center'}
-      bg={['white', `url(${getWebReqUrl('/icon/login-bg.svg')}) no-repeat`]}
-      backgroundSize={['cover', 'cover']}
+      bgImg={`url(${getWebReqUrl('/icon/login-background.jpg')})`}
+      bgSize={'cover'}
+      bgPosition={'center'}
+      bgRepeat={'no-repeat'}
       userSelect={'none'}
       h={'100%'}
+      w={'100%'}
+      position={'relative'}
     >
       {/* Language selector - login page */}
       {isPc && (
@@ -33,7 +37,7 @@ const LoginModal = ({ onSuccess }: LoginModalProps) => {
         flexDirection={'column'}
         w={['100%', '560px']}
         h={['100%', '690px']}
-        bg={[`url(${getWebReqUrl('/icon/login-bg-phone.svg')}) no-repeat`, 'white']}
+        bg={'rgba(255, 255, 255, 0.7)'}
         backgroundSize={'cover'}
         px={['8', '90px']}
         py={['38px', '90px']}
@@ -43,6 +47,7 @@ const LoginModal = ({ onSuccess }: LoginModalProps) => {
           '0px 32px 64px -12px rgba(19, 51, 107, 0.20), 0px 0px 1px 0px rgba(19, 51, 107, 0.20)'
         ]}
         position="relative"
+        backdropFilter={'blur(10px)'}
       >
         <LoginContainer onSuccess={onSuccess} />
       </Flex>

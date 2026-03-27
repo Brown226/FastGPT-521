@@ -61,7 +61,6 @@ const StandDetailModal = dynamic(
 const ConversionModal = dynamic(() => import('@/pageComponents/account/info/ConversionModal'));
 const UpdatePswModal = dynamic(() => import('@/pageComponents/account/info/UpdatePswModal'));
 const UpdateContact = dynamic(() => import('@/components/support/user/inform/UpdateContactModal'));
-const CommunityModal = dynamic(() => import('@/components/CommunityModal'));
 
 const ModelPriceModal = dynamic(() =>
   import('@/components/core/ai/ModelTable').then((mod) => mod.ModelPriceModal)
@@ -71,7 +70,8 @@ const Info = () => {
   const { isPc } = useSystem();
   const { teamPlanStatus, initUserInfo } = useUserStore();
   const standardPlan = teamPlanStatus?.standard;
-  const { isOpen: isOpenContact, onClose: onCloseContact, onOpen: onOpenContact } = useDisclosure();
+  const { isOpen: isOpenContact, onClose: onCloseContact } = { isOpen: false, onClose: () => {} };
+  const onOpenContact = () => {};
 
   useMount(() => {
     initUserInfo();
@@ -102,7 +102,6 @@ const Info = () => {
           </>
         )}
       </Box>
-      {isOpenContact && <CommunityModal onClose={onCloseContact} />}
     </AccountContainer>
   );
 };
@@ -773,14 +772,7 @@ const Other = ({ onOpenContact }: { onOpenContact: () => void }) => {
                 </Box>
               </Flex>
             ))}
-        {feConfigs?.concatMd && (
-          <Flex onClick={onOpenContact} {...ButtonStyles}>
-            <MyIcon name={'modal/concat'} w={'18px'} color={'myGray.600'} />
-            <Box ml={2} flex={1}>
-              {t('account_info:contact_us')}
-            </Box>
-          </Flex>
-        )}
+
         {feConfigs?.show_workorder && (
           <Flex onClick={onFeedback} {...ButtonStyles}>
             <MyIcon name={'feedback'} w={'18px'} color={'myGray.600'} />
