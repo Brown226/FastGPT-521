@@ -44,11 +44,12 @@ const RouteTab = () => {
             }
           ]
         : []),
-      ...(appDetail.permission.hasReadChatLogPer
+      ...(appDetail.permission.isOwner || appDetail.permission.hasReadChatLogPer
         ? [{ label: t('app:chat_logs'), value: TabEnum.logs }]
         : [])
     ],
     [
+      appDetail.permission.isOwner,
       appDetail.permission.hasManagePer,
       appDetail.permission.hasReadChatLogPer,
       appDetail.permission.hasWritePer,

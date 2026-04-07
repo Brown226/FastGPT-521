@@ -17,7 +17,7 @@ services:
     container_name: pg
     restart: always
     ports: # 生产环境建议不要暴露
-      - 5432:5432
+      - 5433:5432
     networks:
       - fastgpt
     environment:
